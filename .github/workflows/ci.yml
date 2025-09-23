@@ -24,20 +24,21 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        working-directory: conkist-web
-        run: npm ci
+        run: |
+          cd conkist-web
+          npm ci
 
       - name: Build Next.js
-        working-directory: conkist-web
         env:
           NEXT_TELEMETRY_DISABLED: 1
         run: |
+          cd conkist-web
           npm run build
 
       - name: Export static site
-        working-directory: conkist-web
         run: |
-          npx next export -o out
+          cd conkist-web
+          npx next export
 
       - name: Upload out artifact
         uses: actions/upload-artifact@v4
