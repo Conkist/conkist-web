@@ -1,0 +1,52 @@
+{
+  "team": [
+    {
+      "id": "ceo",
+      "name": "João Silva",
+      "role": "CEO & Founder",
+      "bio": "Empreendedor apaixonado por tecnologia e jogos, com mais de 10 anos de experiência no mercado de desenvolvimento mobile.",
+      "avatar": "/images/team/joao-silva.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/joaosilva",
+        "twitter": "https://twitter.com/joaosilva",
+        "github": "https://github.com/joaosilva"
+      },
+      "skills": ["Leadership", "Strategy", "Business Development"]
+    },
+    {
+      "id": "cto",
+      "name": "Maria Santos",
+      "role": "CTO",
+      "bio": "Desenvolvedora sênior especializada em arquitetura de sistemas e desenvolvimento de jogos mobile.",
+      "avatar": "/images/team/maria-santos.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/mariasantos",
+        "github": "https://github.com/mariasantos"
+      },
+      "skills": ["React Native", "Unity", "System Architecture"]
+    },
+    {
+      "id": "designer",
+      "name": "Carlos Oliveira",
+      "role": "Lead Designer",
+      "bio": "Designer criativo com foco em UX/UI para jogos e aplicações mobile.",
+      "avatar": "/images/team/carlos-oliveira.jpg",
+      "social": {
+        "linkedin": "https://linkedin.com/in/carlosoliveira",
+        "behance": "https://behance.net/carlosoliveira"
+      },
+      "skills": ["UI/UX Design", "Game Design", "Prototyping"]
+    }
+  ],
+  "departments": [
+    "Development",
+    "Design",
+    "Marketing",
+    "Business"
+  ],
+  "stats": {
+    "totalMembers": 3,
+    "foundingYear": 2023,
+    "locations": ["São Paulo", "Remote"]
+  }
+}

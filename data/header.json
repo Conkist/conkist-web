@@ -1,0 +1,38 @@
+{
+  "logo": {
+    "text": "Conkist",
+    "imageUrl": "/images/logo.png"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/",
+      "active": true
+    },
+    {
+      "label": "Sobre",
+      "href": "/about",
+      "active": false
+    },
+    {
+      "label": "Jogos",
+      "href": "/games",
+      "active": false,
+      "submenu": [
+        {
+          "label": "Trashy Racers",
+          "href": "/games/trashy-racers"
+        }
+      ]
+    },
+    {
+      "label": "Contato",
+      "href": "/contact",
+      "active": false
+    }
+  ],
+  "cta": {
+    "label": "Baixar App",
+    "href": "/download"
+  }
+}
