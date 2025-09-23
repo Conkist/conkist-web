@@ -31,13 +31,21 @@ jobs:
           NEXT_TELEMETRY_DISABLED: 1
         run: npm run build
 
-      - name: Export static site
-        run: npx next export
+      - name: Ensure static export configured (no-op)
+        run: |
+          if [ -f next.config.js ]; then
+            grep -q "output:\s*'export'" next.config.js || echo "Note: next.config.js doesn't set output: 'export' — skipping static export"
+          else
+            echo "No next.config.js found — skipping static export check"
+          fi
 
-      - name: Upload out artifact
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: next-out
-          path: conkist-web/out
+          name: next-build-artifacts
+          path: |
+            out
+            .next
+            public
 
 # added by CI generator
