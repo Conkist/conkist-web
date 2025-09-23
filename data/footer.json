@@ -1,0 +1,49 @@
+{
+  "company": {
+    "name": "Conkist",
+    "description": "Desenvolvemos jogos mobile inovadores que conectam pessoas e criam experiências únicas.",
+    "logo": "/images/logo-white.png"
+  },
+  "contact": {
+    "email": "contato@conkist.com",
+    "phone": "+55 11 99999-9999",
+    "address": {
+      "street": "Rua das Inovações, 123",
+      "city": "São Paulo",
+      "state": "SP",
+      "zip": "01234-567",
+      "country": "Brasil"
+    }
+  },
+  "social": {
+    "facebook": "https://facebook.com/conkist",
+    "twitter": "https://twitter.com/conkist",
+    "instagram": "https://instagram.com/conkist",
+    "linkedin": "https://linkedin.com/company/conkist",
+    "youtube": "https://youtube.com/c/conkist"
+  },
+  "navigation": {
+    "company": [
+      { "label": "Sobre", "href": "/about" },
+      { "label": "Equipe", "href": "/team" },
+      { "label": "Carreiras", "href": "/careers" },
+      { "label": "Imprensa", "href": "/press" }
+    ],
+    "products": [
+      { "label": "Jogos", "href": "/games" },
+      { "label": "Trashy Racers", "href": "/games/trashy-racers" },
+      { "label": "Download", "href": "/download" }
+    ],
+    "support": [
+      { "label": "Central de Ajuda", "href": "/help" },
+      { "label": "Contato", "href": "/contact" },
+      { "label": "Política de Privacidade", "href": "/privacy" },
+      { "label": "Termos de Uso", "href": "/terms" }
+    ]
+  },
+  "legal": {
+    "copyright": "© 2024 Conkist. Todos os direitos reservados.",
+    "privacyPolicy": "/privacy",
+    "termsOfService": "/terms"
+  }
+}

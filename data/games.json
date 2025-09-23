@@ -1,0 +1,38 @@
+{
+  "games": [
+    {
+      "id": "trashy-racers",
+      "title": "Trashy Racers",
+      "description": "Um jogo de corrida emocionante com carros personalizáveis e pistas desafiadoras.",
+      "thumbnail": "/images/games/trashy-racers-thumb.jpg",
+      "screenshots": [
+        "/images/games/trashy-racers-1.jpg",
+        "/images/games/trashy-racers-2.jpg",
+        "/images/games/trashy-racers-3.jpg"
+      ],
+      "features": [
+        "Multiplayer online",
+        "Carros personalizáveis",
+        "Múltiplas pistas",
+        "Sistema de ranking"
+      ],
+      "releaseDate": "2024-12-01",
+      "platforms": ["iOS", "Android"],
+      "genre": "Racing",
+      "rating": 4.5,
+      "downloads": "10K+",
+      "trailer": "/videos/trashy-racers-trailer.mp4"
+    }
+  ],
+  "featured": "trashy-racers",
+  "categories": [
+    {
+      "name": "Racing",
+      "count": 1
+    },
+    {
+      "name": "Action",
+      "count": 0
+    }
+  ]
+}

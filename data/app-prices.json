@@ -1,0 +1,56 @@
+{
+  "appPrices": {
+    "freemium": {
+      "title": "Gratuito",
+      "price": "R$ 0",
+      "period": "",
+      "features": [
+        "Acesso básico aos jogos",
+        "Anúncios inclusos",
+        "Salvamento local",
+        "Suporte da comunidade"
+      ],
+      "popular": false,
+      "buttonText": "Baixar Grátis",
+      "buttonUrl": "/download/free"
+    },
+    "premium": {
+      "title": "Premium",
+      "price": "R$ 19,90",
+      "period": "/mês",
+      "features": [
+        "Acesso completo a todos os jogos",
+        "Sem anúncios",
+        "Salvamento na nuvem",
+        "Suporte prioritário",
+        "Conteúdo exclusivo",
+        "Beta testing"
+      ],
+      "popular": true,
+      "buttonText": "Assinar Premium",
+      "buttonUrl": "/download/premium"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "Personalizado",
+      "period": "",
+      "features": [
+        "Licenciamento corporativo",
+        "Customização de marca",
+        "API dedicada",
+        "Suporte 24/7",
+        "Integração personalizada",
+        "Relatórios avançados"
+      ],
+      "popular": false,
+      "buttonText": "Entrar em Contato",
+      "buttonUrl": "/contact/enterprise"
+    }
+  },
+  "discounts": {
+    "annual": {
+      "percentage": 20,
+      "description": "Economize 20% com plano anual"
+    }
+  }
+}

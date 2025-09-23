@@ -1,0 +1,34 @@
+{
+  "partners": [
+    {
+      "id": "tech-partner-1",
+      "name": "TechCorp",
+      "logo": "/images/partners/techcorp-logo.png",
+      "description": "Parceria em desenvolvimento de tecnologias mobile",
+      "website": "https://techcorp.com",
+      "category": "Technology"
+    },
+    {
+      "id": "gaming-partner-1",
+      "name": "GameStudio",
+      "logo": "/images/partners/gamestudio-logo.png",
+      "description": "Colaboração em design de jogos e experiência do usuário",
+      "website": "https://gamestudio.com",
+      "category": "Gaming"
+    },
+    {
+      "id": "marketing-partner-1",
+      "name": "MarketingPro",
+      "logo": "/images/partners/marketingpro-logo.png",
+      "description": "Estratégias de marketing digital e crescimento",
+      "website": "https://marketingpro.com",
+      "category": "Marketing"
+    }
+  ],
+  "categories": ["Technology", "Gaming", "Marketing", "Investment"],
+  "stats": {
+    "totalPartners": 3,
+    "activeParnerships": 3,
+    "countries": 2
+  }
+}

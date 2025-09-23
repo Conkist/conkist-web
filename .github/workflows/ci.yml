@@ -1,0 +1,46 @@
+name: CI - Next.js
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        working-directory: conkist-web
+        run: npm ci
+
+      - name: Build Next.js
+        working-directory: conkist-web
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+        run: |
+          npm run build
+
+      - name: Export static site
+        working-directory: conkist-web
+        run: |
+          npx next export -o out
+
+      - name: Upload out artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-out
+          path: conkist-web/out
