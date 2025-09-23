@@ -185,3 +185,5 @@ npx vercel
 # Para build estático
 npm run build
 ```
+
+# minor change to allow PR
