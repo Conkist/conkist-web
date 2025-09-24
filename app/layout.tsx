@@ -1,22 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bakbak_One, Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Layout from "@/components/Layout";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bakbakOne = Bakbak_One({
+  weight: "400",
+  variable: "--font-bakbak-one",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Conkist - Jogos Mobile Inovadores",
   description: "Desenvolvemos jogos mobile inovadores que conectam pessoas e criam experiências únicas.",
+  icons: {
+    icon: '/logo-round.svg',
+    shortcut: '/logo-round.svg',
+    apple: '/logo-round.svg',
+  },
 };
 
 export default function RootLayout({
@@ -27,11 +33,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bakbakOne.variable} ${roboto.variable} antialiased`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
