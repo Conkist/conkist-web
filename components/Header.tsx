@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion, scale } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 export default function Header() {
